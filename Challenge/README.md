@@ -16,4 +16,4 @@
 
 # SUMMARY
 * As the "silver tsunami" begins to make an impact, 70,909 vacancies will open up in Pewlett-Hackard!
-* There are not enough qualified, retirement-ready employees in the departments to mentor the next generation of Pewlett Hackard employee. In order to bridge this gap, PH has to relax its criteria for picking mentors. Currently they are considering only employees born in 1965. If it were increased by a few more years, PH would have enough mentors to guarantee a smooth transition.
+* There are not enough qualified, retirement-ready employees in the departments to mentor the next generation of Pewlett Hackard employee. In order to bridge this gap, PH has to relax its criteria for picking mentors. Currently they are considering only employees born in 1965. If it were increased by a few more years, PH would have enough mentors to guarantee a smooth transition. 
