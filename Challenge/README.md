@@ -17,9 +17,9 @@
 <img src="https://github.com/yazhcodes/Pewlett-Hackard-Analysis/blob/main/Challenge/Images/Eligible%20Mentors%20by%20Department.png" width=350 height=300></img>
 </p>
 
-* 
+* A mere 1000+ senior employees are eligible for Mentorship program, so it is vital to offer them the best benefits and retain them for a smooth transition.
 <p align='center'>
-<img src="https://github.com/yazhcodes/Pewlett-Hackard-Analysis/blob/main/Challenge/Images/Eligible%20Mentors%20by%20Title.png" width=350 height=300></img>
+<img src="https://github.com/yazhcodes/Pewlett-Hackard-Analysis/blob/main/Challenge/Images/Eligible%20Mentors%20by%20Title.png" width=300 height=250></img>
 </p>
 
 # SUMMARY 
