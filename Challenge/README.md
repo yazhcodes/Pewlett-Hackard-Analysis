@@ -8,7 +8,7 @@ Provide a bulleted list with four major points from the two analysis deliverable
 * 1549 eligible for Mentorship program
 
 <img src="https://github.com/yazhcodes/Pewlett-Hackard-Analysis/blob/main/Challenge/Images/Retiring%20Employees%20by%20Title.png" width=350 height=250></img>
-<img src="https://github.com/yazhcodes/Pewlett-Hackard-Analysis/blob/main/Challenge/Images/Retiring%20Employees%20by%20Department.png" width=350 height=250></img>
+<img src="https://github.com/yazhcodes/Pewlett-Hackard-Analysis/blob/main/Challenge/Images/Retiring%20Employees%20by%20Department.png" width=350 height=300></img>
 <img src="https://github.com/yazhcodes/Pewlett-Hackard-Analysis/blob/main/Challenge/Images/Eligible%20Mentors%20by%20Department.png" width=350 height=300></img>
 
 # SUMMARY 
