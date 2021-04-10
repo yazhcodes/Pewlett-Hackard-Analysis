@@ -14,7 +14,6 @@
 <img src="https://github.com/yazhcodes/Pewlett-Hackard-Analysis/blob/main/Challenge/Images/Retirees%20and%20Mentors%20by%20Title.png" width=400 height=250></img>
 </p>
 
-# SUMMARY 
-Provide high-level responses to the following questions, then provide two additional queries or tables that may provide more insight into the upcoming "silver tsunami."
-* How many roles will need to be filled as the "silver tsunami" begins to make an impact?
-* Are there enough qualified, retirement-ready employees in the departments to mentor the next generation of Pewlett Hackard employees?
+# SUMMARY
+* As the "silver tsunami" begins to make an impact, 70,909 vacancies will open up in Pewlett-Hackard!
+* There are not enough qualified, retirement-ready employees in the departments to mentor the next generation of Pewlett Hackard employee. In order to bridge this gap, PH has to relax its criteria for picking mentors. Currently they are considering only employees hired in 1965. If it were increased by a few more years, PH would have enough mentors to guarantee a smooth transition.
