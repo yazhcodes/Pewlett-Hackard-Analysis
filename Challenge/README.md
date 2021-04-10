@@ -3,23 +3,17 @@
 
 # RESULTS 
 * A significantly high number of Senior Engineers and Senior Staffs are retiring compared to lower designations like Manager and Asst. Engineer.
-<p align='center'>
-<img src="https://github.com/yazhcodes/Pewlett-Hackard-Analysis/blob/main/Challenge/Images/Retiring%20Employees%20by%20Title.png" width=350 height=250 align></img>
-</p>
-
 * Dev, Prod, Sales have the most number of retiring employees; Marketing, HR, Finance have least number of retiring employees.
 <p align='center'>
+<img src="https://github.com/yazhcodes/Pewlett-Hackard-Analysis/blob/main/Challenge/Images/Retiring%20Employees%20by%20Title.png" width=350 height=250 align></img>
 <img src="https://github.com/yazhcodes/Pewlett-Hackard-Analysis/blob/main/Challenge/Images/Retiring%20Employees%20by%20Department.png" width=350 height=300></img>
 </p>
 
 * Out of 41380 retiring employees, 1549 are eligible for Mentorship program
-<p align='center'>
-<img src="https://github.com/yazhcodes/Pewlett-Hackard-Analysis/blob/main/Challenge/Images/Eligible%20Mentors%20by%20Department.png" width=350 height=300></img>
-</p>
-
 * A mere 1000+ senior employees are eligible for Mentorship program, so it is vital to offer them the best benefits and retain them for a smooth transition.
 <p align='center'>
 <img src="https://github.com/yazhcodes/Pewlett-Hackard-Analysis/blob/main/Challenge/Images/Eligible%20Mentors%20by%20Title.png" width=300 height=250></img>
+<img src="https://github.com/yazhcodes/Pewlett-Hackard-Analysis/blob/main/Challenge/Images/Eligible%20Mentors%20by%20Department.png" width=350 height=300></img>
 </p>
 
 # SUMMARY 
