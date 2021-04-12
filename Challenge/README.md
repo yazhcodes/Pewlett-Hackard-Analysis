@@ -1,5 +1,13 @@
 # OVERVIEW
   As a huge cohort of baby boomers begin to retire, Pewlett-Hackard is looking to future proof itself by planning ahead for this upcoming change. PH wants to determine the list of retiring employees eligible for a retirement package and the number of vacancies that have to be filled in. They would also like to hand pick few of these qualified retiring employees and see if they would be interested to participate in a Mentorship program for the new employees. 
+  
+# ASSUMPTIONS
+The following analysis has been performed based on the below assumptions about the Pewlett-Hackard's policies.
+* Employees who were born between 1952 and 1955 have already retired.
+* Employees born in 1965 are set to retire this year.
+* All of these employees who are retiring this year are eleigible for a Mentorship program.
+* The vacancies created by the retired employees and retiring employees are yet to be filled in.
+* There is no mention about the status of employees born between 1956 and 1964, so they will ignored for the sake of this analysis.
 
 # RESULTS 
 * Development, Production and Sales have the most number of retiring employees; Marketing, HR and Finance have the least number of retiring employees.
@@ -15,5 +23,23 @@
 </p>
 
 # SUMMARY
-* As the "silver tsunami" begins to make an impact, 70,909 vacancies will open up in Pewlett-Hackard!
-* There are not enough qualified, retirement-ready employees in the departments to mentor the next generation of Pewlett Hackard employee. In order to bridge this gap, PH has to relax its criteria for picking mentors. Currently they are considering only employees born in 1965. If it were increased by a few more years, PH would have enough mentors to guarantee a smooth transition. 
+* As the "silver tsunami" begins to make an impact, **91,947 vacancies** will open up in Pewlett-Hackard!
+* There are **not enough** qualified, retirement-ready employees in the departments to mentor the next generation of Pewlett-Hackard employees. 
+* In order to guarantee a smooth transition PH has to bridge this gap, by **altering the Mentorship Eligibility criteria**. Instead of considering only those employees who are set to retire this year, PH could rope in the retired employees too and filter them based on their past performance rating, say for the last 10 years. So out of 91,947 (retired + retiring) employees, if 10% pass the eligibility criteria, there could be around **9,200 mentors for the 91,947 new recruits**. 
+  Since the Performance data has not been sourced in from PH yet, I will present the hypothetical query to identify eligible mentors.
+  ```
+  SELECT 
+  EMP.EMP_NO,
+  EMP.FIRST_NAME,
+  EMP.LAST_NAME,
+  SUM(EP.RATING) AS CUMULATIVE_RATING
+  FROM EMPLOYEES EMP
+  JOIN EMP_PERFORMANCE EP
+  ON EMP.EMP_NO = EP.EMP_NO
+  WHERE (BIRTH_DATE BETWEEN '1952-01-01' AND '1955-12-31'
+  OR BIRTH_DATE BETWEEN '1965-01-01' AND '1965-12-31') 
+  AND EP.YEAR >= '2011'
+  AND CUMULATIVE_RATING >= 90
+  ORDER BY EMP_NO ASC;
+  ```
+* Provide two additional queries or tables that may provide more insight into the upcoming "silver tsunami."
