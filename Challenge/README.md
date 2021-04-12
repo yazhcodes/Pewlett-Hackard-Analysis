@@ -25,7 +25,7 @@ The following analysis has been performed based on the below assumptions about t
 # SUMMARY
 * As the "silver tsunami" begins to make an impact, **91,947 vacancies** will open up in Pewlett-Hackard!
 * There are **not enough** qualified, retirement-ready employees in the departments to mentor the next generation of Pewlett-Hackard employees. 
-* In order to guarantee a smooth transition PH has to bridge this gap, by **altering the Mentorship Eligibility criteria**. Instead of considering only those employees who are set to retire this year, PH could rope in the retired employees too and filter them based on their past performance rating, say for the last 10 years. So out of 91,947 (retired + retiring) employees, if 10% pass the eligibility criteria, there could be around **9,200 mentors for the 91,947 new recruits**. 
+* In order to guarantee a smooth transition, PH has to bridge this gap by **altering the Mentorship Eligibility criteria**. Instead of considering only those employees who are set to retire this year, PH could rope in the retired employees too and filter them based on their past performance rating, say for the last 10 years. So out of 91,947 (retired + retiring) employees, if 10% pass the eligibility criteria, there could be around **9,200 mentors for the 91,947 new recruits**. 
   Since the Performance data has not been sourced in from PH yet, I will present the hypothetical query to identify eligible mentors.
   ```
   SELECT 
@@ -40,6 +40,26 @@ The following analysis has been performed based on the below assumptions about t
   OR BIRTH_DATE BETWEEN '1965-01-01' AND '1965-12-31') 
   AND EP.YEAR >= '2011'
   AND CUMULATIVE_RATING >= 90
-  ORDER BY EMP_NO ASC;
+  GROUP BY 1,2,3
+  ORDER BY 4 DESC;
   ```
-* Provide two additional queries or tables that may provide more insight into the upcoming "silver tsunami."
+* Further, to improvise the Eligibility criteria and increase the efficiency of the Mentorship Program, PH could pick only Senior Employees holding Titles such as Senior Engineer, Senior Staff and Technique Leader.
+  ```
+  SELECT 
+  EMP.EMP_NO,
+  EMP.FIRST_NAME,
+  EMP.LAST_NAME
+  SUM(EP.RATING) AS CUMULATIVE_RATING
+  FROM EMPLOYEES EMP
+  JOIN EMP_PERFORMANCE EP
+  ON EMP.EMP_NO = EP.EMP_NO
+  JOIN TITLES T
+  ON EMP.EMP_NO = T.EMP_NO
+  WHERE (BIRTH_DATE BETWEEN '1952-01-01' AND '1955-12-31'
+  OR BIRTH_DATE BETWEEN '1965-01-01' AND '1965-12-31') 
+  AND EP.YEAR >= '2011'
+  AND CUMULATIVE_RATING >= 90
+  AND TITLE IN ('Senior Engineer','Senior Staff','Technique Leader')
+  GROUP BY 1,2,3
+  ORDER BY 4 DESC;
+  ```
